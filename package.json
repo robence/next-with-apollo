@@ -5,15 +5,23 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
   },
   "dependencies": {
     "next": "10.0.8",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },
-  "prettier": {
-    "singleQuote": true,
-    "semi": false
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-react-app": "^6.0.0"
   }
 }
