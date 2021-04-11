@@ -1,15 +1,6 @@
 import { useQuery, gql } from '@apollo/client'
 import styles from '../styles/Home.module.css'
-
-interface Country {
-  code: string
-  name: string
-  emoji: string
-}
-
-interface CountryData {
-  countries: Country[]
-}
+import { GetCountryCodeAndNames } from './__generated__/GetCountryCodeAndNames'
 
 const GET_COUNTRY_CODE_AND_NAMES = gql`
   query GetCountryCodeAndNames {
@@ -22,7 +13,7 @@ const GET_COUNTRY_CODE_AND_NAMES = gql`
 `
 
 export default function Countries() {
-  const { data, loading, error } = useQuery<CountryData>(
+  const { data, loading, error } = useQuery<GetCountryCodeAndNames>(
     GET_COUNTRY_CODE_AND_NAMES
   )
 
