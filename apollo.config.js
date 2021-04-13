@@ -1,5 +1,5 @@
 module.exports = {
   client: {
-    service: 'My-Graph-lwtuh3',
+    service: 'My-Graph-2-fxmxxk',
   },
 }
